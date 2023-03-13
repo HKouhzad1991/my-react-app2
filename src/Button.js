@@ -1,11 +1,14 @@
 import "./Button.css";
+import React from "react";
+// function Button() {
+//   return <button className="add-to-card">add to card</button>;
+// }
 
-function Button() {
-  return <button className="add-to-card">add to card</button>;
-}
 
+class Button extends React.Component{
 
-class Button{
-    
+    render() {
+        return <button className="add-to-card">add to card</button>;
+    }
 }
 export default Button;
