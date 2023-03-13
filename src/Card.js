@@ -1,6 +1,6 @@
 import Button from "./Button";
 import "./Card.css";
-import React from "react";
+import React from "react"   ;
 // function Card() {
 //   return (
 //     <div className="col">
