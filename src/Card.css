@@ -1,23 +1,22 @@
-
+.col {
+  width: 33.33%;
+}
 .card {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 5px 5px 3px rgba(233, 76, 76, 0.2);
   border-radius: 15px;
 }
-.card-img{
+.card-img {
   max-width: 100%;
 }
-
 .card-body {
   padding: 10px 20px;
 }
-
 .card-title {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
-
 .card-text {
-  text-align: justify;
-  padding: 10px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
 }
-
