@@ -3,8 +3,8 @@ import "./App.css";
 function App() {
   return (
     <div className="row">
-      <User name="hossein">حسین</User>
-      <User name="milad">میلاد</User>
+      <User >حسین</User>
+      <User >میلاد</User>
       <User name="ali">علی</User>
     </div>
   );
