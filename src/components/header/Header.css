@@ -1,7 +1,7 @@
 /* header */
 header{
     height: 100vh;
-    background-color: #69c1cd;
+    background-color: #7bc4ce;
     background-image: url('../../assets/images/hero-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,7 +17,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(66, 23, 64, 0.9);
 } 
 .navbar .nav-link{
     text-decoration: none;
