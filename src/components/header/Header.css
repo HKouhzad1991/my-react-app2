@@ -1,23 +1,23 @@
 /* header */
 header{
     height: 100vh;
-    background-color: #646464;
+    background-color: #7aa1b0;
     background-image: url('../../assets/images/hero-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     background-blend-mode: multiply;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
 }
 .navbar-container{
-    padding: 20px 0;
+    padding: 8px 0;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(53, 36, 68, 0.9);
 } 
 .navbar .nav-link{
     text-decoration: none;
