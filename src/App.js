@@ -1,13 +1,19 @@
-import User from "./User";
-import "./App.css";
+import Card from "./Card";
 function App() {
   return (
-    <div className="row">
-      <User >حسین</User>
-      <User >میلاد</User>
-      <User name="ali">علی</User>
-    </div>
+    <>
+      <header>header</header>
+      <section>
+        <div className="row">
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </section>
+      <footer>footer</footer>
+    </>
   );
 }
 
-export default App;
+export default App
+
