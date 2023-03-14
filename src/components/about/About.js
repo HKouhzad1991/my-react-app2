@@ -1,7 +1,8 @@
-import './About.css'
+import "./About.css";
+import aboutImage from "../../assets/images/about.jpg";
 function About() {
-    return (
-        <section id="about">
+  return (
+    <section id="about">
       <div class="about">
         <h2 class="title">About Me</h2>
         <img class="about-img" src={aboutImage} alt="milad" />
@@ -20,7 +21,5 @@ function About() {
       </div>
     </section>
   );
-    )
 }
-
-export default About
+export default About;
