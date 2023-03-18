@@ -1,25 +1,29 @@
 import "./Blog.css";
 import BlogItem from "./BlogItem";
+import blog1Image from "../../assets/images/post-1.jpg";
+import blog2Image from "../../assets/images/post-2.jpg";
+import blog3Image from "../../assets/images/post-3.jpg";
+
 function Blog() {
   let blogs = [
     {
-      blogImage: "",
+      blogImage: blog1Image,
       blogTitle: "post title 1",
-      blogInfo: "(1)Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      blogDesc: "(1)Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       blogAuthor: "hk2023",
       blogTime: "5",
     },
     {
-      blogImage: "",
+      blogImage: blog2Image,
       blogTitle: "post title 2",
-      blogInfo: "(2)Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      blogDesc: "(2)Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       blogAuthor: "ali karimi",
       blogTime: "15",
     },
     {
-      blogImage: "",
+      blogImage: blog3Image,
       blogTitle: "post title 3",
-      blogInfo: "(3)Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      blogDesc: "(3)Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       blogAuthor: "milad bahrami",
       blogTime: "10",
     },
@@ -34,9 +38,9 @@ function Blog() {
           </p>
         </div>
         <div className="row">
-          <BlogItem />
-          <BlogItem />
-          <BlogItem />
+          <BlogItem {...blogs[0]} />
+          <BlogItem {...blogs[1]} />
+          <BlogItem {...blogs[2]} />
         </div>
       </div>
       div
