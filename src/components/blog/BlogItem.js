@@ -1,24 +1,24 @@
 function BlogItem() {
   return (
-    <div class="col-4">
-      <div class="blog-box">
-        <div class="blog-img">
-          <img src="./img/post-1.jpg" class="img-fluid" />
+    <div className="col-4">
+      <div className="blog-box">
+        <div className="blog-img">
+          <img src="./img/post-1.jpg" className="img-fluid" />
         </div>
-        <div class="blog-content">
-          <h3 class="blog-title">post title 1</h3>
-          <p class="blog-desc">
+        <div className="blog-content">
+          <h3 className="blog-title">post title 1</h3>
+          <p className="blog-desc">
             Proin eget tortor risus. Pellentesque in ipsum id orci porta
             dapibus. Praesent sapien massa, convallis a pellentesque nec,
             egestas non nisi.
           </p>
         </div>
-        <div class="blog-footer">
-          <div class="post-author">
-            <p class="author">Milad Bahrami</p>
+        <div className="blog-footer">
+          <div className="post-author">
+            <p className="author">Hossein Kouhzad</p>
           </div>
-          <div class="post-date">
-            <span class="bi bi-clock"></span> 10 min
+          <div className="post-date">
+            <span className="bi bi-clock"></span> 10 min
           </div>
         </div>
       </div>
