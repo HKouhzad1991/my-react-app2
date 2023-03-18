@@ -1,7 +1,44 @@
-import './service.css'
+import "./Service.css";
 import ServiceItem from "./ServiceItem";
-
 function Service() {
+  let services = [
+    {
+      serviceIcon: "bi bi-briefcase",
+      serviceTitle: "WEB DESIGN",
+      serviceInfo:
+        "(1)Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.",
+    },
+    {
+      serviceIcon: "bi bi-card-checklist",
+      serviceTitle: "WEB DEVELOPMENT",
+      serviceInfo: 
+        "(2)Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.",
+    },
+    {
+      serviceIcon: "bi bi-bar-chart",
+      serviceTitle: "PHOTOGRAPHY",
+      serviceInfo:
+        "(3)Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.",
+    },
+    {
+      serviceIcon: "bi bi-bar-chart",
+      serviceTitle: "PHOTOGRAPHY",
+      serviceInfo:
+        "(4)Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.",
+    },
+    {
+      serviceIcon: "bi bi-bar-chart",
+      serviceTitle: "PHOTOGRAPHY",
+      serviceInfo:
+        "(5)Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.",
+    },
+    {
+      serviceIcon: "bi bi-bar-chart",
+      serviceTitle: "PHOTOGRAPHY",
+      serviceInfo:
+        "(6)Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.",
+    },
+  ];
   return (
     <section id="services">
       <div className="container">
@@ -12,17 +49,15 @@ function Service() {
           </p>
         </div>
         <div className="row">
-          <ServiceItem />
-          <ServiceItem />
-          <ServiceItem />
-          <ServiceItem />
-          <ServiceItem />
-          <ServiceItem />
+          <ServiceItem {...services[0]} />
+          <ServiceItem {...services[1]} />
+          <ServiceItem {...services[2]} />
+          <ServiceItem {...services[3]} />
+          <ServiceItem {...services[4]} />
+          <ServiceItem {...services[5]} />
         </div>
       </div>
     </section>
   );
 }
 export default Service;
-
-
