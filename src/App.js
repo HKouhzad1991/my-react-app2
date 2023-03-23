@@ -5,6 +5,11 @@ import Blog from "./components/blog/Blog";
 import Footer from "./components/footer/Footer";
 
 function App() {
+  // function handlerClick() {
+  //   console.log('کلیک شد')
+  // }
+
+  const cl
   return (
     <>
       <Header />
@@ -13,6 +18,8 @@ function App() {
       <Blog />
       <Footer />
     </>
+
+    // <button onClick={handlerClick}>click me</button>
   );
 }
 export default App;
