@@ -1,6 +1,7 @@
-function App() {
-  return <h1>hossein kouhzad</h1>;
-}
+import Calculator from "./Calculator";
 
+function App() {
+  return <Calculator />;
+}
 
 export default App;
