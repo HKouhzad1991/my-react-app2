@@ -4,7 +4,9 @@ function Calculator() {
   let [result, setResult] = useState("");
 
   const clickHandler = (e) => {
-    setResult(e.target.innerText);
+    let input = e.target.innerText;
+    
+    setResult(result + input);
   };
 
   return (
