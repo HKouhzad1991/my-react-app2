@@ -1,5 +1,5 @@
 .container {
-    height: 400px;
+    width: 400px;
 }
 
 .screen {
@@ -33,4 +33,9 @@ button {
     background: rgb(20, 106, 106);
     color: rgba(240, 243, 247, 0.796);
     font-weight: bold;
+}
+
+.twoCol { 
+    width: 200px;
+    background: rgb(4, 67, 103);
 }
