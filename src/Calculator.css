@@ -8,8 +8,8 @@
     padding: 0 20px;
     font-size: 30px;
     text-align: right;
-    background: #262834;
-    color: white;
+    background: #432849;
+    color: rgb(190, 137, 237);
 
 }
 
@@ -21,21 +21,21 @@
 button {
     width: 100px;
     height: 80px;
-    border: 1px solid rgb(92, 92, 92);
+    border: 1px solid rgb(11, 9, 12);
     outline: 0;
     color: white;
-    background: #262834;
+    background: #2d2d2f;
     cursor: pointer;
     font-size: 25px;
 }
 
 .color {
     background: rgb(20, 106, 106);
-    color: rgba(240, 243, 247, 0.796);
+    color: rgba(100, 158, 238, 0.796);
     font-weight: bold;
 }
 
-.twoCol { 
+.twoCol {
     width: 200px;
-    background: rgb(4, 67, 103);
+    background: rgb(15, 37, 50);
 }
