@@ -2,7 +2,7 @@ import "./Calculator.css";
 function Calculator() {
   return (
     <div className="container">
-      <div className="screen"></div>
+      <div className="screen">25</div>
       <div className="buttons">
         <button>Clear</button>
         <button>C</button>
