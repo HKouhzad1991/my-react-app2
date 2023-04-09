@@ -2,10 +2,25 @@ import { useState } from "react";
 import "./Calculator.css";
 function Calculator() {
   let [result, setResult] = useState("");
+  let [hasDot, setHasDot] = useState(false);
 
+  let operator = ["-", "+", "*", "/"];
+
+  const checkInput = (text) => {
+    if (text == "÷") return "/";
+    if (text == "×") return "*";
+    return text;
+  };
   const clickHandler = (e) => {
-    let input = e.target.innerText;
-    if (input == "." && result.includes(".")) return;
+    let input = checkInput(e.target.innerText);
+    if (input == ".") {
+      if (hasDot == true) return;
+      else setHasDot(true);
+    }
+
+    if (operator.includes(input)) {
+      setHasDot(false);
+    }
 
     setResult(result + input);
   };
@@ -15,6 +30,11 @@ function Calculator() {
   };
   const backSpaceBtn = () => {
     setResult(result.slice(0, -1));
+  };
+
+  const equalBtn = () => {
+    setResult(String(eval(result)));
+    setHasDot(false);
   };
 
   return (
@@ -50,7 +70,9 @@ function Calculator() {
         </button>
         <button onClick={clickHandler}>0</button>
         <button onClick={clickHandler}>.</button>
-        <button className="color twoCol">=</button>
+        <button onClick={equalBtn} className="color twoCol">
+          =
+        </button>
       </div>
     </div>
   );
