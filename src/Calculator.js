@@ -1,24 +1,26 @@
 import { useState } from "react";
+import { evaluate } from "mathjs";
 import "./Calculator.css";
+
 function Calculator() {
   let [result, setResult] = useState("");
   let [hasDot, setHasDot] = useState(false);
 
-  let operator = ["-", "+", "*", "/"];
+  let operators = ["-", "+", "*", "/"];
 
   const checkInput = (text) => {
-    if (text == "÷") return "/";
-    if (text == "×") return "*";
+    if (text === "÷") return "/";
+    if (text === "×") return "*";
     return text;
   };
   const clickHandler = (e) => {
     let input = checkInput(e.target.innerText);
-    if (input == ".") {
-      if (hasDot == true) return;
+    if (input === ".") {
+      if (hasDot === true) return;
       else setHasDot(true);
     }
 
-    if (operator.includes(input)) {
+    if (operators.includes(input)) {
       setHasDot(false);
     }
 
@@ -27,13 +29,15 @@ function Calculator() {
 
   const clearBtn = () => {
     setResult("");
+    setHasDot(false);
   };
   const backSpaceBtn = () => {
+    if (result.endsWith(".")) setHasDot(false);
     setResult(result.slice(0, -1));
   };
 
   const equalBtn = () => {
-    setResult(String(eval(result)));
+    setResult(String(evaluate(result)));
     setHasDot(false);
   };
 
